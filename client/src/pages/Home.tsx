@@ -303,6 +303,101 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Video Gallery Section */}
+      <section className="py-24 bg-background">
+        <div className="container">
+          <h2 className="text-4xl font-bold tracking-tight mb-12 text-center">実証実験・比較動画</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold flex items-center gap-2"><Globe className="h-5 w-5 text-primary"/> 中国テスト①</h3>
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden shadow-lg">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/avJxlQ5SKjw" title="中国テスト①" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold flex items-center gap-2"><Globe className="h-5 w-5 text-primary"/> 中国テスト②</h3>
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden shadow-lg">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WpfzdQBXmUs" title="中国テスト②" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold flex items-center gap-2"><ShieldCheck className="h-5 w-5 text-primary"/> 国内テスト①</h3>
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden shadow-lg">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tcLebzzTFNM" title="国内テスト①" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold flex items-center gap-2 text-muted-foreground"><AlertTriangle className="h-5 w-5"/> 他社ライバル商品</h3>
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden shadow-lg grayscale hover:grayscale-0 transition-all duration-500">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LY38PSxXsDs" title="他社ライバル商品" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Business Guide Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container max-w-4xl">
+          <div className="bg-card text-card-foreground p-8 md:p-12 shadow-xl border border-border/50">
+            <div className="flex items-center gap-4 mb-8 border-b border-border pb-6">
+              <Info className="h-10 w-10 text-primary" />
+              <h2 className="text-3xl font-bold">ケソーヨ事業のご案内</h2>
+            </div>
+            
+            <div className="space-y-10 text-lg leading-relaxed">
+              <section>
+                <h3 className="text-xl font-bold text-primary mb-4">1. 事業背景と目的</h3>
+                <p className="text-muted-foreground">
+                  従来の消火器は「重い・使いにくい・汚れる」という課題があり、一般家庭や小規模店舗への普及には限界がありました。
+                  「KESOYO（ケソーヨ）」は、これらの課題を解決するエアゾール式（固体燃焼型）の革新的な初期消火アイテムです。
+                  中国では年間数十万本の実績があり、この度、日本の法規制に完全準拠する形で正規輸入を開始します。
+                </p>
+              </section>
+
+              <section>
+                <h3 className="text-xl font-bold text-primary mb-4">2. 行政対応と法的安全性</h3>
+                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                  <li><strong className="text-foreground">消防庁見解:</strong> 2022年に「消火器には該当しない」との見解を取得。2024年には「初期消火アイテム」として合法的に販売可能との正式見解を得ています。</li>
+                  <li><strong className="text-foreground">経済産業省対応:</strong> 本製品は火薬類取締法上の「火薬類」に該当しますが、高圧ガス・火薬室との実務協議を経て、正規の輸入・販売体制を構築済みです。</li>
+                  <li><strong className="text-foreground">中国公安基準:</strong> 中国公安基準（GA）に合格しており、高い安全性が証明されています。</li>
+                </ul>
+              </section>
+
+              <section>
+                <h3 className="text-xl font-bold text-primary mb-4">3. サプライチェーンと輸入体制</h3>
+                <div className="bg-secondary/50 p-6 rounded-lg">
+                  <h4 className="font-bold mb-2">商社連携</h4>
+                  <p className="text-muted-foreground mb-4">
+                    日本側商社「株式会社タカデン」と、中国側商社「蘇州豊迅汽車租賃有限公司（郁偉 董事長）」との強力なパートナーシップにより、
+                    2026年年初からの安定した正規輸入が決定しています。
+                  </p>
+                  <h4 className="font-bold mb-2">受け入れ環境（株式会社ビー・クリエイティブ）</h4>
+                  <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
+                    <li>専用保管スペース（一般倉庫と区分）の確保</li>
+                    <li>「火薬類該当製品」としての厳格な識別管理</li>
+                    <li>直射日光・高温・火気を避けた安全な保管環境</li>
+                    <li>万全の在庫管理とトレーサビリティ体制</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section>
+                <h3 className="text-xl font-bold text-primary mb-4">4. 今後の展開と課題</h3>
+                <p className="text-muted-foreground mb-4">
+                  事業の拡大に伴い、以下の施策を順次進めてまいります。
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                  <li><strong className="text-foreground">火薬保管庫の確保:</strong> 国内在庫の安定化に向け、専用の火薬保管庫を整備します。</li>
+                  <li><strong className="text-foreground">簡易試験場の設置:</strong> 自社での品質管理と安全性確認を行うための試験環境を構築します。</li>
+                  <li><strong className="text-foreground">Made in Japan化:</strong> 将来的には最終工程を日本国内で行い、国産ブランドとしての信頼性を確立することを目指します。</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Section */}
       <section className="py-24 bg-background">
         <div className="container">
