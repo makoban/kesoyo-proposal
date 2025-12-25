@@ -365,7 +365,60 @@ export default function Home() {
               </section>
 
               <section>
-                <h3 className="text-xl font-bold text-primary mb-4">3. サプライチェーンと輸入体制</h3>
+                <h3 className="text-xl font-bold text-primary mb-4">3. 原価・仕入れ詳細分析</h3>
+                <div className="bg-secondary/50 p-6 rounded-lg mb-8">
+                  <h4 className="font-bold mb-4">仕入れ原価の内訳（120本試作時概算）</h4>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm text-left">
+                      <thead className="text-xs uppercase bg-background/50 text-muted-foreground">
+                        <tr>
+                          <th className="px-4 py-2">項目</th>
+                          <th className="px-4 py-2 text-right">金額（円）</th>
+                          <th className="px-4 py-2">備考</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-border/50">
+                        <tr>
+                          <td className="px-4 py-2 font-medium">製品本体単価</td>
+                          <td className="px-4 py-2 text-right">2,393</td>
+                          <td className="px-4 py-2 text-muted-foreground">中国メーカー（安順）仕入れ</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-2">成型色変更費</td>
+                          <td className="px-4 py-2 text-right">182</td>
+                          <td className="px-4 py-2 text-muted-foreground">白への変更費用</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-2">印刷費（シルク・箱）</td>
+                          <td className="px-4 py-2 text-right">328</td>
+                          <td className="px-4 py-2 text-muted-foreground">ロゴ、注意書き、箱印刷</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-2">輸送費・諸経費</td>
+                          <td className="px-4 py-2 text-right">546</td>
+                          <td className="px-4 py-2 text-muted-foreground">船便輸送費等</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-2">管理費（上海日伸・タカデン）</td>
+                          <td className="px-4 py-2 text-right">726</td>
+                          <td className="px-4 py-2 text-muted-foreground">現地および国内管理費</td>
+                        </tr>
+                        <tr className="bg-primary/5 font-bold">
+                          <td className="px-4 py-2">合計（概算原価）</td>
+                          <td className="px-4 py-2 text-right text-primary">約 4,176</td>
+                          <td className="px-4 py-2 text-primary">※量産時はさらに低減見込み</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-4 text-right">
+                    ※株式会社ビー・クリエイティブ提供資料に基づく試算（為替変動等により変動の可能性あり）
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h3 className="text-xl font-bold text-primary mb-4">4. サプライチェーンと輸入体制</h3>
                 <div className="bg-secondary/50 p-6 rounded-lg">
                   <h4 className="font-bold mb-2">商社連携</h4>
                   <p className="text-muted-foreground mb-4">
@@ -383,11 +436,12 @@ export default function Home() {
               </section>
 
               <section>
-                <h3 className="text-xl font-bold text-primary mb-4">4. 今後の展開と課題</h3>
+                <h3 className="text-xl font-bold text-primary mb-4">5. 今後の展開と課題</h3>
                 <p className="text-muted-foreground mb-4">
                   事業の拡大に伴い、以下の施策を順次進めてまいります。
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                  <li><strong className="text-foreground">火薬類取扱保安責任者の確保:</strong> 輸入・保管体制の強化のため、火薬類取扱保安責任者（正・副）計2名の配置を進めています。</li>
                   <li><strong className="text-foreground">火薬保管庫の確保:</strong> 国内在庫の安定化に向け、専用の火薬保管庫を整備します。</li>
                   <li><strong className="text-foreground">簡易試験場の設置:</strong> 自社での品質管理と安全性確認を行うための試験環境を構築します。</li>
                   <li><strong className="text-foreground">Made in Japan化:</strong> 将来的には最終工程を日本国内で行い、国産ブランドとしての信頼性を確立することを目指します。</li>
