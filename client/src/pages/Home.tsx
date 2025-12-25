@@ -72,8 +72,8 @@ export default function Home() {
           >
             {/* Product Image Placeholder - Replace with actual image */}
             <div className="relative w-full h-full flex items-center justify-center">
-               <img 
-                 src="/images/001.webp" 
+                 <img 
+                 src="./images/001.webp" 
                  alt="KESOYO Product" 
                  className="object-contain max-h-full drop-shadow-2xl"
                />
@@ -366,42 +366,42 @@ export default function Home() {
 
               <section>
                 <h3 className="text-xl font-bold text-primary mb-4">3. 原価・仕入れ詳細分析</h3>
-                <div className="bg-secondary/50 p-6 rounded-lg mb-8">
+                <div className="bg-white border border-gray-200 p-6 rounded-lg mb-8 shadow-sm">
                   <h4 className="font-bold mb-4">仕入れ原価の内訳（120本試作時概算）</h4>
                   <div className="overflow-x-auto">
                     <table className="w-full text-sm text-left">
-                      <thead className="text-xs uppercase bg-background/50 text-muted-foreground">
+                      <thead className="text-xs uppercase bg-gray-100 text-gray-700">
                         <tr>
                           <th className="px-4 py-2">項目</th>
                           <th className="px-4 py-2 text-right">金額（円）</th>
                           <th className="px-4 py-2">備考</th>
                         </tr>
                       </thead>
-                      <tbody className="divide-y divide-border/50">
+                      <tbody className="divide-y divide-gray-200 text-gray-800">
                         <tr>
                           <td className="px-4 py-2 font-medium">製品本体単価</td>
                           <td className="px-4 py-2 text-right">2,393</td>
-                          <td className="px-4 py-2 text-muted-foreground">中国メーカー（安順）仕入れ</td>
+                          <td className="px-4 py-2 text-gray-600">中国メーカー（安順）仕入れ</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-2">成型色変更費</td>
                           <td className="px-4 py-2 text-right">182</td>
-                          <td className="px-4 py-2 text-muted-foreground">白への変更費用</td>
+                          <td className="px-4 py-2 text-gray-600">白への変更費用</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-2">印刷費（シルク・箱）</td>
                           <td className="px-4 py-2 text-right">328</td>
-                          <td className="px-4 py-2 text-muted-foreground">ロゴ、注意書き、箱印刷</td>
+                          <td className="px-4 py-2 text-gray-600">ロゴ、注意書き、箱印刷</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-2">輸送費・諸経費</td>
                           <td className="px-4 py-2 text-right">546</td>
-                          <td className="px-4 py-2 text-muted-foreground">船便輸送費等</td>
+                          <td className="px-4 py-2 text-gray-600">船便輸送費等</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-2">管理費（上海日伸・タカデン）</td>
                           <td className="px-4 py-2 text-right">726</td>
-                          <td className="px-4 py-2 text-muted-foreground">現地および国内管理費</td>
+                          <td className="px-4 py-2 text-gray-600">現地および国内管理費</td>
                         </tr>
                         <tr className="bg-primary/5 font-bold">
                           <td className="px-4 py-2">合計（概算原価）</td>
@@ -419,14 +419,14 @@ export default function Home() {
 
               <section>
                 <h3 className="text-xl font-bold text-primary mb-4">4. サプライチェーンと輸入体制</h3>
-                <div className="bg-secondary/50 p-6 rounded-lg">
+                <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
                   <h4 className="font-bold mb-2">商社連携</h4>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-gray-700 mb-4">
                     日本側商社「株式会社タカデン」と、中国側商社「蘇州豊迅汽車租賃有限公司（郁偉 董事長）」との強力なパートナーシップにより、
                     2026年年初からの安定した正規輸入が決定しています。
                   </p>
                   <h4 className="font-bold mb-2">受け入れ環境（株式会社ビー・クリエイティブ）</h4>
-                  <ul className="list-disc pl-6 space-y-1 text-muted-foreground">
+                  <ul className="list-disc pl-6 space-y-1 text-gray-700">
                     <li>専用保管スペース（一般倉庫と区分）の確保</li>
                     <li>「火薬類該当製品」としての厳格な識別管理</li>
                     <li>直射日光・高温・火気を避けた安全な保管環境</li>
@@ -458,13 +458,13 @@ export default function Home() {
           <h2 className="text-4xl font-bold tracking-tight mb-12">Product Gallery</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
              <div className="aspect-video bg-muted flex items-center justify-center overflow-hidden">
-                <img src="/images/002.webp" alt="Usage Scenes" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img src="./images/002.webp" alt="Usage Scenes" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
              </div>
              <div className="aspect-video bg-muted flex items-center justify-center overflow-hidden">
-                <img src="/images/003.webp" alt="Color Variations" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img src="./images/003.webp" alt="Color Variations" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
              </div>
              <div className="col-span-1 md:col-span-2 aspect-[21/9] bg-muted flex items-center justify-center overflow-hidden">
-                <img src="/images/004.webp" alt="Features" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img src="./images/004.webp" alt="Features" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
              </div>
           </div>
         </div>
