@@ -279,19 +279,26 @@ export default function Home() {
                 <div className="flex gap-4">
                   <div className="h-12 w-12 shrink-0 bg-primary/20 flex items-center justify-center text-primary font-bold text-xl">1</div>
                   <div>
+                    <h3 className="text-xl font-bold mb-2">火薬類取扱保安責任者の確保</h3>
+                    <p className="opacity-70">輸入・保管体制の強化のため、火薬類取扱保安責任者（正・副）計2名の配置を進めています。</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="h-12 w-12 shrink-0 bg-primary/20 flex items-center justify-center text-primary font-bold text-xl">2</div>
+                  <div>
                     <h3 className="text-xl font-bold mb-2">火薬保管庫の確保</h3>
                     <p className="opacity-70">国内在庫の安定化に向けた専用保管庫の整備。</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="h-12 w-12 shrink-0 bg-primary/20 flex items-center justify-center text-primary font-bold text-xl">2</div>
+                  <div className="h-12 w-12 shrink-0 bg-primary/20 flex items-center justify-center text-primary font-bold text-xl">3</div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">簡易試験場の設置</h3>
                     <p className="opacity-70">品質管理と安全性確認のための自社試験環境の構築。</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="h-12 w-12 shrink-0 bg-primary/20 flex items-center justify-center text-primary font-bold text-xl">3</div>
+                  <div className="h-12 w-12 shrink-0 bg-primary/20 flex items-center justify-center text-primary font-bold text-xl">4</div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Made in Japan化</h3>
                     <p className="opacity-70">最終工程を日本国内で行い、国産ブランドとしての信頼性を確立。</p>
@@ -435,18 +442,7 @@ export default function Home() {
                 </div>
               </section>
 
-              <section>
-                <h3 className="text-xl font-bold text-primary mb-4">5. 今後の展開と課題</h3>
-                <p className="text-muted-foreground mb-4">
-                  事業の拡大に伴い、以下の施策を順次進めてまいります。
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                  <li><strong className="text-foreground">火薬類取扱保安責任者の確保:</strong> 輸入・保管体制の強化のため、火薬類取扱保安責任者（正・副）計2名の配置を進めています。</li>
-                  <li><strong className="text-foreground">火薬保管庫の確保:</strong> 国内在庫の安定化に向け、専用の火薬保管庫を整備します。</li>
-                  <li><strong className="text-foreground">簡易試験場の設置:</strong> 自社での品質管理と安全性確認を行うための試験環境を構築します。</li>
-                  <li><strong className="text-foreground">Made in Japan化:</strong> 将来的には最終工程を日本国内で行い、国産ブランドとしての信頼性を確立することを目指します。</li>
-                </ul>
-              </section>
+
             </div>
           </div>
         </div>
