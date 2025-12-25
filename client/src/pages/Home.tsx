@@ -37,9 +37,14 @@ export default function Home() {
             variants={fadeIn}
             className="space-y-6"
           >
-            <Badge variant="outline" className="text-primary border-primary px-4 py-1 text-sm tracking-widest uppercase bg-background/10 backdrop-blur-sm">
-              Project KESOYO
-            </Badge>
+            <div className="flex gap-4">
+              <Badge variant="outline" className="text-primary border-primary px-4 py-1 text-sm tracking-widest uppercase bg-background/10 backdrop-blur-sm">
+                Project KESOYO
+              </Badge>
+              <Badge variant="destructive" className="px-4 py-1 text-sm tracking-widest uppercase">
+                Confidential
+              </Badge>
+            </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
               SMART FIRE<br />
               <span className="text-primary">EXTINGUISHER</span>
@@ -49,8 +54,12 @@ export default function Home() {
               消防庁確認済みの、次世代初期消火アイテム。
             </p>
             <div className="pt-4">
-              <Button size="lg" className="text-lg px-8 py-6 rounded-none bg-primary hover:bg-primary/90 text-primary-foreground">
-                事業計画を見る
+              <Button 
+                size="lg" 
+                className="text-lg px-8 py-6 rounded-none bg-primary hover:bg-primary/90 text-primary-foreground"
+                onClick={() => document.getElementById('executive-summary')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                事業計画詳細へ
               </Button>
             </div>
           </motion.div>
@@ -74,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* Executive Summary */}
-      <section className="py-24 bg-background">
+      <section id="executive-summary" className="py-24 bg-background">
         <div className="container">
           <motion.div 
             initial="hidden"
